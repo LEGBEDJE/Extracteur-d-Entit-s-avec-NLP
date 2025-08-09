@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Named Entity Extractor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Named Entity Extractor (NER)</h1>
+        <p>Paste some text below to identify people, organizations, locations, and more.</p>
+        <form id="ner-form">
+            <textarea id="text" name="text" rows="10" required placeholder="Example: Apple Inc. was founded by Steve Jobs in Cupertino, California in 1976."></textarea>
+            <button type="submit">Extract Entities</button>
+        </form>
+        <div id="result-container">
+            <h2>Result:</h2>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
